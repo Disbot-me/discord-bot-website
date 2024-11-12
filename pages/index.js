@@ -7,6 +7,10 @@ export default function Home() {
    return (
       <div className="min-h-screen flex flex-col">
          <Navbar />
+
+         <Head>
+            <title>Homepage | Disbot.me</title>
+         </Head>
          <main className="flex flex-col items-center py-12 flex-grow">
             <h1 className="text-4xl font-bold text-white mb-6">Welcome to Discord Bot Hub</h1>
             <p className="text-lg text-gray-300 mb-6 text-center max-w-2xl">
