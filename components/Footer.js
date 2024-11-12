@@ -19,51 +19,51 @@ const Footer = () => {
       <div className="border-t-2 border-footer-150"></div>
 
       <footer className="py-4 bg-footer-100 flex flex-col items-center justify-center">
-        <div className="container flex flex-col md:flex-row items-center px-4 space-y-4 md:space-y-0">
+        <div className="container flex flex-col md:flex-row items-center px-4 md:justify-between space-y-4 md:space-y-0">
 
-          {/* Social media buttons on the left, stacked vertically */}
-          <div className="flex flex-col space-y-2 md:mr-8">
+          {/* Social media buttons on the left */}
+          <div className="flex space-x-4 md:space-x-6">
             <a href="https://twitter.com/dlistgg" target="_blank" rel="noopener noreferrer">
-              <button className="flex items-center bg-blue-500 text-white px-4 py-2 rounded-full w-40 justify-center space-x-2">
+              <button className="flex items-center bg-blue-500 text-white px-3 py-1.5 md:px-4 md:py-2 rounded-full w-32 md:w-40 justify-center space-x-2">
                 <TwitterIcon />
-                <span className="font-bold text-sm">Follow us on twitter!</span>
+                <span className="font-bold text-xs md:text-sm">Follow us on Twitter!</span>
               </button>
             </a>
             <a href="https://discord.com/invite/XbuJ6VH" target="_blank" rel="noopener noreferrer">
-              <button className="flex items-center bg-purple-500 text-white px-4 py-2 rounded-full w-40 justify-center space-x-2">
+              <button className="flex items-center bg-purple-500 text-white px-3 py-1.5 md:px-4 md:py-2 rounded-full w-32 md:w-40 justify-center space-x-2">
                 <DiscordIcon />
-                <span className="font-bold text-sm">Join Our Discord!</span>
+                <span className="font-bold text-xs md:text-sm">Join Our Discord!</span>
               </button>
             </a>
           </div>
 
-          {/* Centered Links with one in the middle, one left, and one right */}
-          <div className="flex flex-col md:flex-row items-center justify-center text-center space-y-4 md:space-y-0 md:space-x-10 ml-[300px]">
-            {/* Get Involved section on the left */}
+          {/* Inline Links */}
+          <div className="flex space-x-16 text-center text-white">
+            {/* Get Involved section */}
             <div>
-              <h3 className="text-lg font-semibold text-white">Get Involved</h3>
+              <h3 className="text-xs md:text-sm lg:text-lg font-semibold">Get Involved</h3>
               <ul className="space-y-1 mt-1">
-                <li><a href="https://github.com/discordlist-gg/beta-issues/issues" className="hover:text-white transition">Report a bug</a></li>
-                <li><a href="https://github.com/discordlist-gg/beta-issues/issues/new" className="hover:text-white transition">Suggestions</a></li>
+                <li><a href="https://github.com/discordlist-gg/beta-issues/issues" className="text-xs md:text-sm lg:text-base hover:text-white transition">Report a bug</a></li>
+                <li><a href="https://github.com/discordlist-gg/beta-issues/issues/new" className="text-xs md:text-sm lg:text-base hover:text-white transition">Suggestions</a></li>
               </ul>
             </div>
 
-            {/* Links section in the center */}
+            {/* Links section */}
             <div>
-              <h3 className="text-lg font-semibold text-white">Links</h3>
+              <h3 className="text-xs md:text-sm lg:text-lg font-semibold">Links</h3>
               <ul className="space-y-1 mt-1">
-                <li><a href="/help" className="hover:text-white transition">Help</a></li>
-                <li><a href="/about" className="hover:text-white transition">About Us</a></li>
+                <li><a href="/help" className="text-xs md:text-sm lg:text-base hover:text-white transition">Help</a></li>
+                <li><a href="/about" className="text-xs md:text-sm lg:text-base hover:text-white transition">About Us</a></li>
               </ul>
             </div>
 
-            {/* Policies section on the right */}
+            {/* Policies section */}
             <div>
-              <h3 className="text-lg font-semibold text-white">Policies</h3>
+              <h3 className="text-xs md:text-sm lg:text-lg font-semibold">Policies</h3>
               <ul className="space-y-1 mt-1">
-                <li><a href="/privacy" className="hover:text-white transition">Privacy Policy</a></li>
-                <li><a href="/terms" className="hover:text-white transition">Terms of Service</a></li>
-                <li><a href="/security" className="hover:text-white transition">Security</a></li>
+                <li><a href="/privacy" className="text-xs md:text-sm lg:text-base hover:text-white transition">Privacy Policy</a></li>
+                <li><a href="/terms" className="text-xs md:text-sm lg:text-base hover:text-white transition">Terms of Service</a></li>
+                <li><a href="/security" className="text-xs md:text-sm lg:text-base hover:text-white transition">Security</a></li>
               </ul>
             </div>
           </div>
