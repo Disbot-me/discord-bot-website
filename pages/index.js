@@ -8,9 +8,6 @@ export default function Home() {
       
 
       <div className="min-h-screen flex flex-col">
-      <Head>
-         <title>Testing</title>
-      </Head>
          <Navbar />
          <main className="flex flex-col items-center py-12 flex-grow">
             <h1 className="text-4xl font-bold text-white mb-6">Welcome to Discord Bot Hub</h1>
